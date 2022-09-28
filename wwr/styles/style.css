@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -61,6 +62,7 @@ main section img {
     background-color: beige;
 }
 .msg {
+    font-family: "Rock Salt", Arial;;
     background-color: skyblue;
     line-height: 1.5em;
     padding: 35px;
@@ -117,6 +119,7 @@ footer.social img {
     margin-top: 10px;
 }
 h2{
+    font-family: "Rock Salt", Arial;
     margin: 0;
 }
 #logo_link {
