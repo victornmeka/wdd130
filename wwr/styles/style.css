@@ -13,7 +13,17 @@ nav {
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
+#blog {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
 #hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#blog-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
@@ -37,9 +47,18 @@ nav a {
     grid-row: 1/2;
     margin-top: 100px;
 }
+#blog-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
 #hero-msg h1 {
     text-align: center;
     color: #d4b158
+}
+#blog-msg h1 {
+    text-align: center;
+    color: #ffffff
 }
 .button-box {
     text-align: center;
@@ -50,7 +69,13 @@ nav a {
     align-items: center;
     grid-gap: 50px;
 }
-.card-img, .mountains {
+.blog-grid {
+    display: grid;
+    grid-template-columns: 10fr;
+    align-items: center;
+    grid-gap: 50px;
+}
+.card-img, .mountains, .Summer {
     width: 100%;
 }
 .rivers-card {
@@ -65,23 +90,47 @@ nav a {
     grid-column: 8/10;
     grid-row: 2/3;
 }
+.rafting-season {
+    grid-column: 5/7;
+    grid-row: 8/9;
+    width: auto;
+    justify-content: center;
+    justify-items: center;
+}
 #background {
     grid-column: 1/11;
     grid-row: 4/9;
+}
+#background-summer {
+    grid-column:1/11;
+    grid-row: 2/7;
 }
 .mountains {
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
+.Summer {
+    grid-column: 2/7;
+    grid-row: 3/6;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.ad {
+    grid-column: 6/10;
+    grid-row: 4/5;
+}
 .msg {
     grid-column: 6/10;
     grid-row: 6/7;
 }
+
 main section{
     text-align: center;
 }
 #background {
+    height: 725px;
+}
+#background-summer {
     height: 725px;
 }
 body {
@@ -95,7 +144,7 @@ nav a:hover {
     background-color: skyblue;
     color: black;
 }
-.book, .join{
+.book, .join, .book-now{
     background-color: #d4b158;
     color: rgb(42, 31, 1);
     text-decoration: none;
@@ -124,10 +173,24 @@ main section img {
     background-color: skyblue;
     color: beige;
 }
+.book-now:hover {
+    background-color: skyblue;
+    color: beige;
+}
 #background {
     background-color: #d4b158;
 }
+#background-summer {
+    background-color: #d4b158;
+}
 .msg {
+    font-family: "Rock Salt", Arial;;
+    background-color: skyblue;
+    line-height: 1.5em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.ad {
     font-family: "Rock Salt", Arial;;
     background-color: skyblue;
     line-height: 1.5em;
@@ -138,7 +201,16 @@ main section img {
     background-color: skyblue;
     color: beige;
 }
+.ad h2 {
+    background-color: skyblue;
+    color: beige;
+}
 .msg p {
+    color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.ad p {
     color: white;
     font-size: .8em;
     padding-bottom: 15px;
@@ -177,6 +249,9 @@ footer.social img {
 #hero-img {
     width: 100%;
 }
+#blog-img {
+    width: 100%;
+}
 .logo {
     width: 80px;
 }
@@ -184,6 +259,10 @@ footer.social img {
     margin: 200px 0;
 }
 .home-title{
+    font-family:"Rock Salt", Arial;
+    font-size: 2em;
+    margin-top: 10px;
+}.blog-title{
     font-family:"Rock Salt", Arial;
     font-size: 2em;
     margin-top: 10px;
@@ -200,7 +279,7 @@ h2{
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, #blog, .home-grid, .blog-grid{
         display: block;
         height: auto;
     }
@@ -211,27 +290,27 @@ h2{
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, #blog {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg, #blog-msg {
         margin-top: 0;
     }
     #hero-msg h4 {
         display: none;
     }
-    .home-title {
+    .home-title, .blog-title {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, .camping-card, .rapids-card, .rafting-season { 
         margin: 50px auto;
         width: 60%;
     }
-    #background {
+    #background , #background-summer {
         display: none;
     }
-    .mountains, .msg {
+    .mountains, .msg, .Summer {
         width: 80%;
         display: block;
         margin: 0 auto;
