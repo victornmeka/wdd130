@@ -151,6 +151,34 @@ footer a {
 footer a:hover {
     color: white;
 }
-
+@media screen and (max-width: 900px) {
+    #hero, .home-grid{
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
 
 
