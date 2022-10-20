@@ -45,18 +45,21 @@ nav a {
 }
 #hero-msg h1 {
     text-align: center;
-    color: #325e00
+    color: #325e00;
+    text-size-adjust: 30%;
 }
 .home-title{
     font-family:"Calistoga", Arial;
     font-size: 6em;
     margin-top: 10px;
+    text-size-adjust: 40%;
 }
 #hero-msg h4 {
     color: white;
     text-align: center;
     font-size: 2em;
     margin-top: 98%;
+    text-size-adjust: 50%;
 }
 h2{
     font-family: "Roboto", Arial;
@@ -113,10 +116,12 @@ main section{
 .msg h2 {
     color: beige;
     font-size: 10em;
+    text-size-adjust: 50%;
 }
 .msg p {
     color: white;
     font-size: 2em;
+    text-size-adjust: 30%;
     
 }
 
