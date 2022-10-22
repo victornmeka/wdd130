@@ -195,7 +195,7 @@ footer a:hover {
     text-size-adjust: 30%;
     
 }
-.msgs ul {
+.msgs li {
     color: black;
     font-size: 2em;
     text-size-adjust: 30%;
@@ -209,15 +209,14 @@ footer a:hover {
     align-content: center;
 }
 .globe-card {
-    grid-column: 2/8;
-    grid-row: 7/11;
+    grid-column: 2/9;
+    grid-row: 7/8;
     align-content: center;
-    align-self: center;
-    align-content: center;
+    align-items: center;
 }
 
 .card-img{
-    height: 20%;
+    height: 8%;
     width: 35%;
     align-self: center;
     align-content: center;
