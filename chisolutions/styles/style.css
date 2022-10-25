@@ -71,6 +71,10 @@ main section{
 .button-box {
     text-align: center;
 }
+.button-boxa {
+    text-align: center;
+    margin-top: 150px;
+}
 .button-box-os {
     text-align: center;
 }
@@ -89,7 +93,7 @@ main section{
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
-    margin-top: 50px;
+    margin-top: 100px;
     border-radius: 5px;
 }
 .contactus:hover {
@@ -223,6 +227,47 @@ footer a:hover {
     align-self: center;
     margin-left: 40%;
 
+}
+.about-us-grid{
+    display: block;
+}
+.webconn{
+    display: block;
+    border: 2px solid #638041;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.ab {
+    background-color: #2e5c51;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ab p {
+    text-size-adjust: 80%;
+}
+.ab p a:hover {
+    text-decoration: underline;
+}
+.ab.social img {
+    padding-top: 15px;
+}
+.icon {
+    width: 80px;
+    padding: 10px;
+}
+.ab h3 {
+    color: white;
+}
+.ab a {
+    color: white;
+    text-decoration: none;
+}
+.ab a:hover {
+    color: white;
 }
 
 
