@@ -77,6 +77,8 @@ main section{
 }
 .button-box-os {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contactus{
     background-color: #638041;
